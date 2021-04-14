@@ -13,6 +13,7 @@
 - git fetch upstream
 - git checkout main
 - git rebase upstream/main
+
 [4] Create new branch for assignments (git branch c-lab)
 
 [5] commit your codes in branch (git add . & git commit)
