@@ -8,11 +8,11 @@
 
 [3] Update cloned branch for new assignments template
 
--Add the remote, call it "upstream":
--git remote add upstream https://github.com/masoudem/c_lab_2021.git
--git fetch upstream
--git checkout main
--git rebase upstream/main
+- Add the remote, call it "upstream":
+- git remote add upstream https://github.com/masoudem/c_lab_2021.git
+- git fetch upstream
+- git checkout main
+- git rebase upstream/main
 [4] Create new branch for assignments (git branch ca-lab-xx)
 
 [5] commit your codes in branch (git add lab-xx & git commit)
