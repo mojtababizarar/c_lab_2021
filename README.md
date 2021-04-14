@@ -13,10 +13,9 @@
 - git fetch upstream
 - git checkout main
 - git rebase upstream/main
-[4] Create new branch for assignments (git branch ca-lab-xx)
+[4] Create new branch for assignments (git branch c-lab)
 
-[5] commit your codes in branch (git add lab-xx & git commit)
+[5] commit your codes in branch (git add . & git commit)
 
-[6] set branch remote to private repository like CEIT Gitlab (git push -u https://git.ce.aut.ac.ir/XYZ lab-xx)
+[6] set branch remote to private repository like CEIT Gitlab (git push -u origin main)
 
-[7] after passing the course, add your id and semester in last line of who-know-logic-lab.md file by pull request.
