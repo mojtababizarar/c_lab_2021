@@ -1,21 +1,21 @@
-
-#include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
 
-int Main() {
-    int num1, num2;                 // input values
+int main() {
+    double num1, num2;                 // input values
     char op;                        // operator
-    int result;                     // output
+    double result;                     // output
 
-    Printf("Choose operation to perform (+, -, *, /, %%, sin, cos, tan): ");
-    scanf(" %c", op);
+    printf("Choose operation to perform (+, -, *, /, %%, sin, cos, tan): ");
+    scanf(" %c", &op);
 
     printf("Enter first number: ");
-    scanf("%d", &num1);
+    scanf("%lf", &num1);
     printf("Enter second number: ");
-    scanf("%d", &num2)
+    scanf("%lf", &num2);
 
     // do the operation
+    
     if(op == '+') {
         // the part that calculates the sum of two numbers
         result = num1 + num2;
@@ -40,7 +40,6 @@ int Main() {
         }
     }
     else if(op == '%') {
-        // the part that calculates the remainder of a number over another number
         if ((num1 - (int)num1 == 0) && (num2 - (int)num2) == 0) {
             result = (int)num1 % (int)num2;
         }
@@ -63,21 +62,15 @@ int Main() {
     }
 
     // print result
-    if(op == 's') {
-        printf("result : sin(%d/%d) = %d", num1, num2, result);
+  
+    if (op == 's') {
+        printf("result : sin(%lf/%lf) = %lf", num1, num2, result);
+    } else if (op == 'c') {
+        printf("result : cos(%lf/%lf) = %lf", num1, num2, result);
+    } else if (op == 't') {
+        printf("result : tan(%lf/%lf) = %lf", num1, num2, result);
+    } else {
+        printf("result : %lf %c %lf = %lf", num1, op, num2, result);
     }
-    else if(op == 'c') {
-        printf("result : cos(%d/%d) = %d", num1, num2, result);
-    }
-    else if(op == 't') {
-        printf("result : tan(%d/%d) = %d", num1, num2, result);
-    }
-    else if(op == '%') {
-        printf("result : %.lf %% %.lf = %.lf", num1, num2, result);
-    }
-    else {
-        printf("result : %d %c %d = %d", num1, op, num2, result);
-    }
-
     return 0;
 }
